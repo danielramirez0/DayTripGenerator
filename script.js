@@ -50,7 +50,51 @@ document.querySelector(".confirm").addEventListener("click", function () {
 // Initial values set
 let dayTrip = {
   destination: getRandomFrom(destinationOptions),
-  restaurants: getRandomFrom(restaurantOptions),
+  restaurant: getRandomFrom(restaurantOptions),
   transportation: getRandomFrom(transportationOptions),
   entertainment: getRandomFrom(entertainmentOptions),
 };
+// Build initial form
+document.querySelector(".destinations").textContent = [...destinationOptions];
+document.querySelector(".restaurants").textContent = [...restaurantOptions];
+document.querySelector(".transports").textContent = [...transportationOptions];
+document.querySelector(".entertainments").textContent = [
+  ...entertainmentOptions,
+];
+const displayTrip = function () {
+  document.querySelector(
+    ".trip"
+  ).textContent = `You are going to ${dayTrip.destination}.\n Dining will be at ${dayTrip.restaurant}.\n You will travel using a(n) ${dayTrip.transportation}.\n The entertainment will be ${dayTrip.entertainment}.`;
+};
+displayTrip();
+
+function changeDayTripOption(opt) {
+  let newOption;
+  switch (opt) {
+    case "destination":
+      newOption = getRandomFrom(destinationOptions);
+      while (newOption === dayTrip.destination) {
+        newOption = getRandomFrom(destinationOptions);
+      }
+      break;
+    case "restaurant":
+      newOption = getRandomFrom(restaurantOptions);
+      while (newOption === dayTrip.restaurant) {
+        newOption = getRandomFrom(restaurantOptions);
+      }
+      break;
+    case "transportation":
+      newOption = getRandomFrom(transportationOptions);
+      while (newOption === dayTrip.transportation) {
+        newOption = getRandomFrom(transportationOptions);
+      }
+      break;
+    case "entertainment":
+      newOption = getRandomFrom(transportationOptions);
+      while (newOption === dayTrip.transportation) {
+        newOption = getRandomFrom(transportationOptions);
+      }
+      break;
+  }
+  return newOption;
+}
