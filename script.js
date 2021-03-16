@@ -1,6 +1,6 @@
 "use strict";
 
-const destinations = [
+const destinationOptions = [
   "Hoth",
   "Tatooine",
   "Coruscant",
@@ -8,7 +8,7 @@ const destinations = [
   "Kashyyyk",
   "Dagobah",
 ];
-const restaurants = [
+const restaurantOptions = [
   "Docking Bay 7 Food and Cargo (quick service dining)",
   "Oga’s Cantina (bar/lounge)",
   "Milk Stand (snack stand)",
@@ -16,7 +16,7 @@ const restaurants = [
   "Kat Sakas Kettle (snack stand)",
 ];
 
-const transportation = [
+const transportationOptions = [
   "All Terrain Armored Transport (AT-AT)",
   "All Terrain Scout Transport (AT-ST)",
   "Snowspeeder (T-47 Airspeeder)",
@@ -28,10 +28,29 @@ const transportation = [
   "Millennium Falcon",
 ];
 
-const entertainment = [
+const entertainmentOptions = [
   "Podracing",
   "Droid Boxing",
   "Jedi Temple Experience",
   "Nightclub Dancing",
   "Live Music",
 ];
+
+// RNG selector of items in arrays
+const getRandomFrom = function (arr) {
+  return arr[Math.trunc(Math.random() * arr.length)];
+};
+
+// Event listener for confirm button
+document.querySelector(".confirm").addEventListener("click", function () {
+  const finalTrip = document.querySelector(".summary").Value;
+  console.log(finalTrip);
+});
+
+// Initial values set
+let dayTrip = {
+  destination: getRandomFrom(destinationOptions),
+  restaurants: getRandomFrom(restaurantOptions),
+  transportation: getRandomFrom(transportationOptions),
+  entertainment: getRandomFrom(entertainmentOptions),
+};
