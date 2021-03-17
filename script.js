@@ -99,4 +99,5 @@ document.querySelector(".change-ent").addEventListener("click", function () {
 // Event listener for confirm button
 document.querySelector(".confirm").addEventListener("click", function () {
   console.log(dayTrip);
+  alert(`Congrats! You will go to ${dayTrip.destination}, eat at ${dayTrip.restaurant}, ride in the ${dayTrip.transportation}, and enjoy ${dayTrip.entertainment}`);
 });
