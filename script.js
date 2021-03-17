@@ -1,13 +1,6 @@
 "use strict";
 
-const destinationOptions = [
-  "Hoth",
-  "Tatooine",
-  "Coruscant",
-  "Naboo",
-  "Kashyyyk",
-  "Dagobah",
-];
+const destinationOptions = ["Hoth", "Tatooine", "Coruscant", "Naboo", "Kashyyyk", "Dagobah"];
 const restaurantOptions = [
   "Docking Bay 7 Food and Cargo (quick service dining)",
   "Oga’s Cantina (bar/lounge)",
@@ -27,13 +20,7 @@ const transportationOptions = [
   "Millennium Falcon",
 ];
 
-const entertainmentOptions = [
-  "Podracing",
-  "Droid Boxing",
-  "Jedi Temple Experience",
-  "Nightclub Dancing",
-  "Live Music",
-];
+const entertainmentOptions = ["Podracing", "Droid Boxing", "Jedi Temple Experience", "Nightclub Dancing", "Live Music"];
 
 // RNG selector of items in arrays
 const getRandomFrom = function (arr) {
@@ -52,45 +39,42 @@ let dayTrip = {
 document.querySelector(".destinations").textContent = [...destinationOptions];
 document.querySelector(".restaurants").textContent = [...restaurantOptions];
 document.querySelector(".transports").textContent = [...transportationOptions];
-document.querySelector(".entertainments").textContent = [
-  ...entertainmentOptions,
-];
-const displayTrip = function () {
-  document.querySelector(
-    ".trip"
-  ).textContent = `You are going to ${dayTrip.destination}.\n Dining will be at ${dayTrip.restaurant}.\n You will travel using the ${dayTrip.transportation}.\n The entertainment will be ${dayTrip.entertainment}.`;
+document.querySelector(".entertainments").textContent = [...entertainmentOptions];
+
+const displayTrip = function (identifier, objProperty) {
+  document.querySelector(`.${identifier}`).textContent = `${identifier[0].toUpperCase() + identifier.slice(1)}: ${objProperty}`;
 };
+
 // Event listener for start button
 document.querySelector(".start").addEventListener("click", function () {
-  displayTrip();
+  displayTrip("destination", dayTrip.destination);
+  displayTrip("restaurant", dayTrip.restaurant);
+  displayTrip("transportation", dayTrip.transportation);
+  displayTrip("entertainment", dayTrip.entertainment);
 });
+
+function verifyDifferentOption(optArr, currentOpt) {
+  let result = getRandomFrom(optArr);
+  while (result === currentOpt) {
+    result = getRandomFrom(optArr);
+  }
+  return result;
+}
 
 function changeDayTripOption(opt) {
   let newOption;
   switch (opt) {
     case "destination":
-      newOption = getRandomFrom(destinationOptions);
-      while (newOption === dayTrip.destination) {
-        newOption = getRandomFrom(destinationOptions);
-      }
+      newOption = verifyDifferentOption(destinationOptions, dayTrip.destination);
       break;
     case "restaurant":
-      newOption = getRandomFrom(restaurantOptions);
-      while (newOption === dayTrip.restaurant) {
-        newOption = getRandomFrom(restaurantOptions);
-      }
+      newOption = verifyDifferentOption(restaurantOptions, dayTrip.restaurant);
       break;
     case "transportation":
-      newOption = getRandomFrom(transportationOptions);
-      while (newOption === dayTrip.transportation) {
-        newOption = getRandomFrom(transportationOptions);
-      }
+      newOption = verifyDifferentOption(transportationOptions, dayTrip.transportation);
       break;
     case "entertainment":
-      newOption = getRandomFrom(entertainmentOptions);
-      while (newOption === dayTrip.entertainment) {
-        newOption = getRandomFrom(entertainmentOptions);
-      }
+      newOption = verifyDifferentOption(entertainmentOptions, dayTrip.entertainment);
       break;
   }
   return newOption;
@@ -98,19 +82,19 @@ function changeDayTripOption(opt) {
 
 document.querySelector(".change-dest").addEventListener("click", function () {
   dayTrip.destination = changeDayTripOption("destination");
-  displayTrip();
+  displayTrip("destination", dayTrip.destination);
 });
 document.querySelector(".change-din").addEventListener("click", function () {
   dayTrip.restaurant = changeDayTripOption("restaurant");
-  displayTrip();
+  displayTrip("restaurant", dayTrip.restaurant);
 });
 document.querySelector(".change-tran").addEventListener("click", function () {
   dayTrip.transportation = changeDayTripOption("transportation");
-  displayTrip();
+  displayTrip("transportation", dayTrip.transportation);
 });
 document.querySelector(".change-ent").addEventListener("click", function () {
   dayTrip.entertainment = changeDayTripOption("entertainment");
-  displayTrip();
+  displayTrip("entertainment", dayTrip.entertainment);
 });
 // Event listener for confirm button
 document.querySelector(".confirm").addEventListener("click", function () {
