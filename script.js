@@ -24,7 +24,6 @@ const transportationOptions = [
   "Y-Wing Fighter",
   "X-Wing Fighter",
   "TIE Interceptor",
-  "Slave I",
   "Millennium Falcon",
 ];
 
@@ -41,12 +40,6 @@ const getRandomFrom = function (arr) {
   return arr[Math.trunc(Math.random() * arr.length)];
 };
 
-// Event listener for confirm button
-document.querySelector(".confirm").addEventListener("click", function () {
-  const finalTrip = document.querySelector(".summary").Value;
-  console.log(finalTrip);
-});
-
 // Initial values set
 let dayTrip = {
   destination: getRandomFrom(destinationOptions),
@@ -54,6 +47,7 @@ let dayTrip = {
   transportation: getRandomFrom(transportationOptions),
   entertainment: getRandomFrom(entertainmentOptions),
 };
+
 // Build initial form
 document.querySelector(".destinations").textContent = [...destinationOptions];
 document.querySelector(".restaurants").textContent = [...restaurantOptions];
@@ -64,9 +58,12 @@ document.querySelector(".entertainments").textContent = [
 const displayTrip = function () {
   document.querySelector(
     ".trip"
-  ).textContent = `You are going to ${dayTrip.destination}.\n Dining will be at ${dayTrip.restaurant}.\n You will travel using a(n) ${dayTrip.transportation}.\n The entertainment will be ${dayTrip.entertainment}.`;
+  ).textContent = `You are going to ${dayTrip.destination}.\n Dining will be at ${dayTrip.restaurant}.\n You will travel using the ${dayTrip.transportation}.\n The entertainment will be ${dayTrip.entertainment}.`;
 };
-displayTrip();
+// Event listener for start button
+document.querySelector(".start").addEventListener("click", function () {
+  displayTrip();
+});
 
 function changeDayTripOption(opt) {
   let newOption;
@@ -90,11 +87,32 @@ function changeDayTripOption(opt) {
       }
       break;
     case "entertainment":
-      newOption = getRandomFrom(transportationOptions);
-      while (newOption === dayTrip.transportation) {
-        newOption = getRandomFrom(transportationOptions);
+      newOption = getRandomFrom(entertainmentOptions);
+      while (newOption === dayTrip.entertainment) {
+        newOption = getRandomFrom(entertainmentOptions);
       }
       break;
   }
   return newOption;
 }
+
+document.querySelector(".change-dest").addEventListener("click", function () {
+  dayTrip.destination = changeDayTripOption("destination");
+  displayTrip();
+});
+document.querySelector(".change-din").addEventListener("click", function () {
+  dayTrip.restaurant = changeDayTripOption("restaurant");
+  displayTrip();
+});
+document.querySelector(".change-tran").addEventListener("click", function () {
+  dayTrip.transportation = changeDayTripOption("transportation");
+  displayTrip();
+});
+document.querySelector(".change-ent").addEventListener("click", function () {
+  dayTrip.entertainment = changeDayTripOption("entertainment");
+  displayTrip();
+});
+// Event listener for confirm button
+document.querySelector(".confirm").addEventListener("click", function () {
+  console.log(dayTrip);
+});
