@@ -1,2 +1,2 @@
-# DayTripGenerator
-Week 2 Project Repo
+# Rando Planissian
+## A randomize day trip planner set in the star wars universe
