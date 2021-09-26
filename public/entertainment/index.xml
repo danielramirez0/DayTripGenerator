@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Entertainments on Rando Planissian</title>
+    <link>http://example.org/entertainment/</link>
+    <description>Recent content in Entertainments on Rando Planissian</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 26 Sep 2021 08:13:19 -0700</lastBuildDate><atom:link href="http://example.org/entertainment/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Live Music</title>
+      <link>http://example.org/entertainment/live-music/</link>
+      <pubDate>Sun, 26 Sep 2021 08:13:19 -0700</pubDate>
+      
+      <guid>http://example.org/entertainment/live-music/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nightclud Dancing</title>
+      <link>http://example.org/entertainment/nightclud-dancing/</link>
+      <pubDate>Sun, 26 Sep 2021 08:13:15 -0700</pubDate>
+      
+      <guid>http://example.org/entertainment/nightclud-dancing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jedi Temple Experience</title>
+      <link>http://example.org/entertainment/jedi-temple-experience/</link>
+      <pubDate>Sun, 26 Sep 2021 08:13:07 -0700</pubDate>
+      
+      <guid>http://example.org/entertainment/jedi-temple-experience/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Droid Boxing</title>
+      <link>http://example.org/entertainment/droid-boxing/</link>
+      <pubDate>Sun, 26 Sep 2021 08:12:58 -0700</pubDate>
+      
+      <guid>http://example.org/entertainment/droid-boxing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Podracing</title>
+      <link>http://example.org/entertainment/podracing/</link>
+      <pubDate>Sun, 26 Sep 2021 08:12:51 -0700</pubDate>
+      
+      <guid>http://example.org/entertainment/podracing/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

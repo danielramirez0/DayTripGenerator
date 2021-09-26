@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>planner on Rando Planissian</title>
+    <link>http://example.org/tags/planner/</link>
+    <description>Recent content in planner on Rando Planissian</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 24 Sep 2021 21:52:26 -0700</lastBuildDate><atom:link href="http://example.org/tags/planner/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Planner</title>
+      <link>http://example.org/</link>
+      <pubDate>Fri, 24 Sep 2021 21:52:26 -0700</pubDate>
+      
+      <guid>http://example.org/</guid>
+      <description>Your number one source for a random star wars adventure!
+Plan A Day Trip If you don&amp;rsquo;t like your results, just try again!</description>
+    </item>
+    
+  </channel>
+</rss>
