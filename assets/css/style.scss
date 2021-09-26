@@ -7,6 +7,8 @@ html {
   height: 100%;
   font-size: 100%;
   box-sizing: border-box;
+  margin: auto;
+  text-align: center;
 }
 header {
   text-align: center;
@@ -16,23 +18,25 @@ body {
 }
 
 main {
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.btn {
-  border-color: lightblue;
-  border-radius: 2rem;
-  background-color: #eee;
-  color: #222;
-  font-size: 1rem;
-  font-family: inherit;
-  margin: 0.5rem;
-  padding: 1rem 1rem;
-  cursor: pointer;
+ul {
+    list-style-type: none;
 }
 
+// .btn {
+//   border-color: lightblue;
+//   border-radius: 2rem;
+//   background-color: #eee;
+//   color: #222;
+//   font-size: 1rem;
+//   font-family: inherit;
+//   margin: 0.5rem;
+//   padding: 1rem 1rem;
+//   cursor: pointer;
+// }
 .btns {
   margin: 0 auto;
   width: auto;

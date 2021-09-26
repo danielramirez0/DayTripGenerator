@@ -1,5 +1,25 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Rando Planissian'
 defaultContentLanguage = "en-us"
-theme = "hugo-tranquilpeak-theme"
+theme = "bootstrap"
+
+Paginate = 10
+
+[params]
+    author = "Daniel Ramirez"
+    description = "The best random day planner for your Star Wars experience"
+    gh_url= "https://api.github.com/users"
+    gh_user= "danielramirez0"
+    destinations = "one two three"
+
+[permalinks]
+    posts = "posts/:year/:month/:slug/"
+    year = "/posts/:slug"
+    month = "/posts/:slug"
+
+[taxonomies]
+    year = "year"
+    month = "month"
+    tag = "tags"
+    category = "categories"
