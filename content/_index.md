@@ -8,4 +8,6 @@ tags:
 
 Your number one source for a random star wars adventure!
 
-## Plan A Random Day Trip
+## Plan A Day Trip
+
+If you don't like your results, just try again!
