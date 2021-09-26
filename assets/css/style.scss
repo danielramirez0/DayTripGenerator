@@ -9,12 +9,15 @@ html {
   box-sizing: border-box;
   margin: auto;
   text-align: center;
+  background-image: url(/images/casey-horner-RmoWqDCqN2E-unsplash.jpg);
 }
 header {
   text-align: center;
 }
 body {
-  background: linear-gradient(to top, #5199f7, #89b882);
+//   background: linear-gradient(to top, #5199f7, #89b882);
+  background-image: url(/images/casey-horner-RmoWqDCqN2E-unsplash.jpg);
+  color: whitesmoke !important;
 }
 
 main {
