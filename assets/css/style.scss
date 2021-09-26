@@ -15,7 +15,7 @@ header {
   text-align: center;
 }
 body {
-//   background: linear-gradient(to top, #5199f7, #89b882);
+  //   background: linear-gradient(to top, #5199f7, #89b882);
   background-image: url(/images/casey-horner-RmoWqDCqN2E-unsplash.jpg);
   color: whitesmoke !important;
 }
@@ -26,7 +26,7 @@ main {
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 // .btn {
@@ -68,4 +68,30 @@ ul {
   margin: 0 auto;
   margin-left: 0;
   /* margin-right: 500px; */
+}
+
+.navbar .navbar-nav {
+  position: absolute;
+  display: inline-block;
+  float: none;
+}
+
+.navbar .navbar-collapse {
+  text-align: left;
+}
+
+nav {
+    position: absolute !important;
+    top: 50%;
+}
+
+@media screen and (max-width: 991px) {
+  nav {
+      position: relative !important;
+      top: auto;
+    flex-direction: row;
+  }
+  .navbar .navbar-nav {
+    position: relative;
+  }
 }
