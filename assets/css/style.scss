@@ -81,7 +81,12 @@ ul {
 
 nav {
     position: absolute !important;
-    top: 50%;
+    top: 30%;
+}
+
+.info {
+    margin-left: 20px;
+    margin-right: 10px;
 }
 
 @media screen and (max-width: 991px) {
