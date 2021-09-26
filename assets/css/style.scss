@@ -9,13 +9,12 @@ html {
   box-sizing: border-box;
   margin: auto;
   text-align: center;
-  background-image: url(/images/casey-horner-RmoWqDCqN2E-unsplash.jpg);
 }
 header {
   text-align: center;
+  margin-top: 150px;
 }
 body {
-  //   background: linear-gradient(to top, #5199f7, #89b882);
   background-image: url(/images/casey-horner-RmoWqDCqN2E-unsplash.jpg);
   color: whitesmoke !important;
 }
@@ -86,6 +85,10 @@ nav {
 }
 
 @media screen and (max-width: 991px) {
+header {
+    margin-top: auto;
+}
+
   nav {
       position: relative !important;
       top: auto;
@@ -94,4 +97,7 @@ nav {
   .navbar .navbar-nav {
     position: relative;
   }
+  .navbar .navbar-collapse {
+      text-align: center;
+    }
 }
