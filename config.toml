@@ -1,4 +1,4 @@
-baseURL = 'randoplanissian.netlify.app'
+baseURL = '/'
 languageCode = 'en-us'
 title = 'Rando Planissian'
 defaultContentLanguage = "en-us"
