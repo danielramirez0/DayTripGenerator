@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Transportations on Rando Planissian</title>
-    <link>http://example.org/transportation/</link>
+    <link>randoplanissian.netlify.app/transportation/</link>
     <description>Recent content in Transportations on Rando Planissian</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Sep 2021 08:08:39 -0700</lastBuildDate><atom:link href="http://example.org/transportation/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Sep 2021 08:08:39 -0700</lastBuildDate><atom:link href="randoplanissian.netlify.app/transportation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Millennium Falcon</title>
-      <link>http://example.org/transportation/millennium-falcon/</link>
+      <link>randoplanissian.netlify.app/transportation/millennium-falcon/</link>
       <pubDate>Sun, 26 Sep 2021 08:08:39 -0700</pubDate>
       
-      <guid>http://example.org/transportation/millennium-falcon/</guid>
+      <guid>randoplanissian.netlify.app/transportation/millennium-falcon/</guid>
       <description>A smugglers best friend&amp;hellip;</description>
     </item>
     
     <item>
       <title>TIE Interceptor</title>
-      <link>http://example.org/transportation/tie-interceptor/</link>
+      <link>randoplanissian.netlify.app/transportation/tie-interceptor/</link>
       <pubDate>Sun, 26 Sep 2021 08:08:31 -0700</pubDate>
       
-      <guid>http://example.org/transportation/tie-interceptor/</guid>
+      <guid>randoplanissian.netlify.app/transportation/tie-interceptor/</guid>
       <description>The empires 1-1 match against the X-Wing. Every bit as capable and just as fun to fly!</description>
     </item>
     
     <item>
       <title>X Wing</title>
-      <link>http://example.org/transportation/x-wing/</link>
+      <link>randoplanissian.netlify.app/transportation/x-wing/</link>
       <pubDate>Sun, 26 Sep 2021 08:08:19 -0700</pubDate>
       
-      <guid>http://example.org/transportation/x-wing/</guid>
+      <guid>randoplanissian.netlify.app/transportation/x-wing/</guid>
       <description>One of the more recognizable crafts in the universe. It&amp;rsquo;s fast, agile, and extremely fun to fly!</description>
     </item>
     
     <item>
       <title>Y Wing</title>
-      <link>http://example.org/transportation/y-wing/</link>
+      <link>randoplanissian.netlify.app/transportation/y-wing/</link>
       <pubDate>Sun, 26 Sep 2021 08:08:15 -0700</pubDate>
       
-      <guid>http://example.org/transportation/y-wing/</guid>
+      <guid>randoplanissian.netlify.app/transportation/y-wing/</guid>
       <description>Specializing in bombing, this craft will have you flying high in all the skies!</description>
     </item>
     
     <item>
       <title>ETA 2</title>
-      <link>http://example.org/transportation/eta-2/</link>
+      <link>randoplanissian.netlify.app/transportation/eta-2/</link>
       <pubDate>Sun, 26 Sep 2021 08:07:52 -0700</pubDate>
       
-      <guid>http://example.org/transportation/eta-2/</guid>
+      <guid>randoplanissian.netlify.app/transportation/eta-2/</guid>
       <description>Used primarily in the clone wars, this fighter will show you that age is just a number in terms of levels of fun!</description>
     </item>
     
     <item>
       <title>T 47</title>
-      <link>http://example.org/transportation/t-47/</link>
+      <link>randoplanissian.netlify.app/transportation/t-47/</link>
       <pubDate>Sun, 26 Sep 2021 08:07:39 -0700</pubDate>
       
-      <guid>http://example.org/transportation/t-47/</guid>
+      <guid>randoplanissian.netlify.app/transportation/t-47/</guid>
       <description>Essentially a utility craft at home in the snow. Grappling hooks and other tools make for a fun time!</description>
     </item>
     
     <item>
       <title>AT ST</title>
-      <link>http://example.org/transportation/at-st/</link>
+      <link>randoplanissian.netlify.app/transportation/at-st/</link>
       <pubDate>Sun, 26 Sep 2021 08:07:28 -0700</pubDate>
       
-      <guid>http://example.org/transportation/at-st/</guid>
+      <guid>randoplanissian.netlify.app/transportation/at-st/</guid>
       <description>A fast ground trasnport for troops. Get up and close on the action in this bipedal close action vehicle!</description>
     </item>
     
     <item>
       <title>AT AT</title>
-      <link>http://example.org/transportation/at-at/</link>
+      <link>randoplanissian.netlify.app/transportation/at-at/</link>
       <pubDate>Sun, 26 Sep 2021 08:02:19 -0700</pubDate>
       
-      <guid>http://example.org/transportation/at-at/</guid>
+      <guid>randoplanissian.netlify.app/transportation/at-at/</guid>
       <description>You will feel the raw power of this beast as you gallivant across the open battlefield in your adventure!</description>
     </item>
     

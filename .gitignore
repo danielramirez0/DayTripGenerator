@@ -1,5 +1,5 @@
 node_modules/
 *erStories.docx
-themes/
+# themes/
 # public/
 resources/
