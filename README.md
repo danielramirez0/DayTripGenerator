@@ -1,13 +1,7 @@
 # Rando Planissian
 ## A randomize day trip planner set in the star wars universe
 
-## Required theme
-
-1. Simply clone the repository `git clone https://github.com/kakawait/hugo-tranquilpeak-theme.git` on `themes` folder
-2. Rename the folder in `hugo-tranquilpeak-theme` (if necessary) and place it in `themes` folder of your Hugo blog
-
-```shell
-mkdir themes
-cd themes
-git clone https://github.com/kakawait/hugo-tranquilpeak-theme.git
-```
+## How to see the site
+ - Download / install hugo run ```hugo server``` and navigate to localhost:1313
+    or
+ - go to https://randoplanissian.netlify.app/
